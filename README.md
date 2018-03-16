@@ -44,7 +44,6 @@ Bootstrap :
 Quicksand et Open Sans :
 
 Pour utiliser les fonts Quicksand et Open Sans, utiliser le lien CDN fournit par [google fonts](https://fonts.google.com/) et placé le lien CDN dans _00-head.mustache :
-
 "<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet" />"
 
 
