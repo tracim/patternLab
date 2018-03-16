@@ -36,7 +36,7 @@ Bootstrap :
 - Placer le dossier Bootstrap.css dans le dossier css présent dans source.
 - Charger les deux fichiers:
   bootstrap.min.js dans _01-foot.mustache via le script : "<script src="../../js/bootstrap/bootstrap.min.js"></script>"
-  bootstrap.min.css dans _00-head.mustache via le link  : "<link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />".
+  bootstrap.min.css dans _00-head.mustache via le link  : `<link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />`
 
 
 ### FONTS
@@ -44,7 +44,7 @@ Bootstrap :
 Quicksand et Open Sans :
 
 Pour utiliser les fonts Quicksand et Open Sans, utiliser le lien CDN fournit par [google fonts](https://fonts.google.com/) et placé le lien CDN dans _00-head.mustache :
-"<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet" />"
+`<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet" />` 
 
 
 Font Awesome :
