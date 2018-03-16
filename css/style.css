@@ -10,20 +10,28 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 
+.nomarginlabel{
+  margin-bottom: 0
+}
 
 /****** TITLES *******/
 
-.titleWorkspace{
+.titleSection{
   font-size: 25px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
 }
 
-/******* BUTTONS *********/
+/******* SUB TITLE ******/
 
-.nomarginlabel{
-  margin-bottom: 0
+.subtitle{
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: #2175fe;
 }
+
+/******* BUTTONS *********/
 
 .btnswitch {
   display: flex;
@@ -91,77 +99,58 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/**** BUTTONS DASHBOARD *****/
+/******* FORMS ********/
 
-.btnaction{
+/*** CHECKBOX ***/
+
+.checkbox{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin 20px 30px: 20px 0;
-  border-radius: 10px;
-  padding: 15px;
-  width: 250px;
-  height: 200px;
-  box-shadow: 1px 1px 5px 2px #ababab;
-  text-align: center;
-  background-color: #2571fe;
-  cursor: pointer;
+  align-items: center;
 }
 
-.btnaction:active{
-  box-shadow: inset 0px 0px 5px 2px #656565;
-}
 
-.btnaction-icon{
-  font-size: 30px;
-}
-
-.btnaction-title{
-  font-size: 18px;
-  color: white;
-}
+/******** DROPDOWN **********/
 
 /***** SIDEBAR DROPDOWN *****/
 
-.sidebardrop{
-  width: 300px;
+.sidebarDropdown{
+  width: 300px
 }
 
-.wrapper{
+.sidebarItem{
   display: flex;
   align-items: center;
   border-bottom: 1px solid #215e8e;
   width: 100%;
   height: 100%;
-  background-color: #2571fe;
+  background-color: #2175fe;
   cursor: pointer;
 }
 
-.number{
+.sbNumber{
   flex-grow: 0;
-  padding: 11px;
   height: 100%;
   font-size: 18px;
   background-color: rgba(253,253,253,0.3);
-  padding 12px
+  padding: 12px;
   min-width: 50px;
   letter-spacing: 2px;
 }
 
-.name{
+.sbName{
   flex-grow: 2;
   padding: 10px;
   font-size: 20px;
-  color: off-white;
+  color: #FDFDFD;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.sbicon{
+.sbIcon{
   flex-grow: 0;
   padding: 10px;
-  color: white;
+  color: #fff;
 }
 
 .submenu{
@@ -169,19 +158,22 @@ input:checked + .slider:before {
   padding: 0;
   width: 100%;
   background-color: #82b2cc;
-  height: 0;
   overflow: hidden;
-  transition height: 0.5s;
+  transition: height 0.5s;
 }
 
-.subdropdown{
+.subDrop{
   display: flex;
   align-items: center;
   border-top: 1px solid #215e8e;
 }
 
-.subdropdown:nth-last-child(1){
+.subDrop:nth-last-child(1) {
   border-bottom: 1px solid #215e8e;
+}
+
+.subDrop:hover {
+  background-color: #569EDE;
 }
 
 .showdropdown{
@@ -193,15 +185,14 @@ input:checked + .slider:before {
 }
 
 .subIcon{
+  padding: 10px 15px;
+  min-width: 50px;
   flex-grow: 0;
-  padding: 11px;
   height: 100%;
   font-size: 18px;
   background-color: rgba(253,253,253,0.3);
-  padding: 10px 15px;
-  min-width: 50px;
-
 }
+
 
 /***** DROPDOWN HEADER ******/
 
@@ -215,11 +206,7 @@ input:checked + .slider:before {
 .set-size {
   font-size: 10em;
 }
-.charts-container:after {
-  clear: both;
-  content: "";
-  display: table;
-}
+
 .pie-wrapper {
   height: 10em;
   width: 10em;
@@ -395,6 +382,96 @@ $bg) when (@progress <= 50):before {
   width: 100px;
 }
 
+/***** MESSAGE ******/
+
+/*** DATE & HOUR ****/
+
+.settime{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color: #ABABAB;
+}
+
+/*** MESSAGE ***/
+
+.received{
+  border: 1px solid #ABABAB;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sended{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #215e8e;
+  color: #FDFDFD;
+}
+
+/************ SPECIFIQUE COMPOSANT **************/
+
+/***** Title *****/
+
+.titleWorkspace{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  font-weight: 600px;
+  color: #215e8e;
+}
+
+/***** ADDMEMBER *****/
+
+.addmember{
+  display: flex;
+  align-items: center;
+  border: 1px solid #656565;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.addmember-img{
+  margin-right: 20px;
+  width: 50px;
+}
+
+/**** BUTTONS DASHBOARD *****/
+
+.btnaction{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin 20px 30px: 20px 0;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  height: 200px;
+  box-shadow: 1px 1px 5px 2px #ababab;
+  text-align: center;
+  background-color: #2571fe;
+  cursor: pointer;
+}
+
+.btnaction:active{
+  box-shadow: inset 0px 0px 5px 2px #656565;
+}
+
+.btnaction-icon{
+  font-size: 30px;
+}
+
+.btnaction-title{
+  font-size: 18px;
+  color: white;
+}
+
+/***** DELIMITER ******/
+
+.delimiter{
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 50%;
+  height: 5px;
+  background-color: #2175fe;
+}
 
 /************ MOLECULES **************/
 
@@ -404,7 +481,6 @@ $bg) when (@progress <= 50):before {
   display: flex;
   align-items: center;
   border: 1px solid #ABABAB;
-  width: 1000px
 }
 
 .file:hover{
@@ -435,7 +511,6 @@ $bg) when (@progress <= 50):before {
   display: flex;
   align-items: center;
   border: 1px solid #ABABAB;
-  width: 1000px;
   background-color: #f0f0f0;
 }
 
@@ -461,6 +536,28 @@ $bg) when (@progress <= 50):before {
   font-size: 25px;
 }
 
+/***** MEMBER LIST ******/
+
+.member{
+  display: flex;
+  align-items: center;
+  border: 1px solid #ABABAB;
+  padding: 15px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/***** MENU VERTICAL ******/
+
+.itemMenuVertical:hover{
+  width: 100%;
+  background-color: #2571fe;
+  color: #FDFDFD;
+}
 
 /*********** ORGANISM ************/
 
@@ -491,12 +588,11 @@ $bg) when (@progress <= 50):before {
   background-color: #f0f0f0;
 }
 
-
 /******** SIDEBAR **********/
 
 .sidebar{
   width: 300px;
-  height: 600px;
+  height: 100%;
   background-color: #215e8e;
 }
 
@@ -519,16 +615,139 @@ $bg) when (@progress <= 50):before {
   font-size: 24px;
 }
 
-
-
 /******* TEMPLATES **********/
+
+/***** GENERAL RULES *****/
+
+.body{
+  display: flex;
+}
+
+.sidebarContainer{
+  width: 300px;
+}
+
+.content{
+  width: calc(100% - 300px); /* 300px => sidebar width */
+}
 
 /***** WORKSPACE ******/
 
 .nopadding{
-  padding-left: 0
+  padding: 0;
 }
 
 .wkstitle{
   font-size: 25px;
+}
+
+/***** DASHBOARD *****/
+
+.heading-info{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.notification{
+  padding: 50px;
+}
+
+.wksInfo{
+  width: 60%
+}
+
+.calltoaction{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-call{
+  margin: 10px 20px 10px 0;
+}
+
+.info-wks{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.activity{
+  width: 55%;
+}
+
+.activity-notif{
+  border: 1px solid #ABABAB;
+}
+
+.activity-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.memberlist{
+  width: 35%;
+}
+
+.list{
+  border: 1px solid #ABABAB;
+}
+
+/****** ACCOUNT PAGE *******/
+
+.info-user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ABABAB;
+  padding: 25px;
+}
+
+.info-avatar img{
+  width: 100px;
+  height: 100px;
+}
+
+.info-perso{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pos-delimiter{
+  position: relative;
+  top: 50px;
+  z-index: 3;
+}
+
+.user-preference{
+  display: flex;
+  padding: 25px;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.menu-vertical{
+  padding-top: 15px;
+  border-radius: 10px;
+  width: 20%;
+  height: 600px;
+  background-color: #FDFDFD;
+}
+
+.nav-link{
+  padding-left: 25px;
+}
+
+.setting{
+  border-radius: 10px;
+  padding-top: 15px;
+  width: 80%;
+  height: 600px;
+  background-color: #FDFDFD;
 }

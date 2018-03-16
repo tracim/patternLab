@@ -1,0 +1,94 @@
+{{> Organismes-header}}
+
+<div class="container-fluid nopadding">
+  <div class="body">
+
+    <div class="sidebarContainer">
+      {{> Organismes-Sidebar}}
+    </div>
+
+    <div class="content px-5">
+
+      <div class="my-5"> 
+        {{> Atoms-Titles}}
+      </div>
+
+      <div class="heading-info my-5">
+        <div class="wksInfo">
+          <div class="title mb-4">
+            {{> Specifique-TitleWorkspace}}
+          </div>
+          <div class="description">
+            Eiusmod labore est sunt ut ea nisi fugiat sed cupidatat officia enim consequat in non cupidatat proident dolore consequat adipisicing aliqua ullamco cillum amet tempor fugiat officia non do sunt commodo consectetur.
+          </div>
+        </div>
+        <div class="notification">
+          <div class="status">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+            <div class="mt-3">
+              {{> Atoms-Buttons-generic}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calltoaction mb-5">
+        <div class="btn-call">
+          {{> Specifique-Btn-Dashboard}}
+        </div>
+        <div class="btn-call">
+          {{> Specifique-Btn-Dashboard}}
+        </div>
+        <div class="btn-call">
+          {{> Specifique-Btn-Dashboard}}
+        </div>
+        <div class="btn-call">
+          {{> Specifique-Btn-Dashboard}}
+        </div>
+        <div class="btn-call">
+          {{> Specifique-Btn-Dashboard}}
+        </div>
+      </div>
+
+      <div class="info-wks">
+        <div class="activity mb-5 mr-5">
+          <div class="activity-header">
+            <div class="activity-title mb-3">
+              Activité Recente
+            </div>
+            <div class="activity-read">
+              {{> Atoms-Buttons-generic}}
+            </div>
+          </div>
+        
+          <div class="activity-notif">
+            <div class="activity-table">
+              {{> Molecules-activity}}
+            </div>
+            <div class="more m-3">
+              {{> Atoms-Buttons-generic}}
+            </div>
+          </div>
+
+        </div>
+
+        <div class="memberlist mb-5">
+          <div class="titlemember mb-3">
+            Liste des membres
+          </div>
+          <div class="list"> 
+            {{> Organismes-list-member}}
+          </div>
+        </div>
+      </div>
+
+      <div class="webdav mb-5">
+        {{> Specifique-Btn-Webdav}}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{{> Organismes-footer}}
