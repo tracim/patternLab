@@ -397,12 +397,12 @@ $bg) when (@progress <= 50):before {
 .received{
   border: 1px solid #ABABAB;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .sended{
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #215e8e;
   color: #FDFDFD;
 }
@@ -588,6 +588,27 @@ $bg) when (@progress <= 50):before {
   flex-grow: 1;
 }
 
+/***** MESSAGE *****/
+
+.message-avatar{
+  position: relative;
+  top: 50px;
+}
+
+.message-time{
+  margin-left: 60px;
+}
+
+/***** VERSION *****/
+
+.version{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f0f0f0;
+}
+
 /*********** ORGANISM ************/
 
 /******** HEADER **********/
@@ -671,6 +692,64 @@ $bg) when (@progress <= 50):before {
   flex-direction: column;
 }
 
+/***** MESSAGE LIST *****/
+
+.timeline{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.timeline-header{
+  flex-grow: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #ABABAB;
+}
+
+.timeline-messagelist{
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.timine-wysiwyg{
+  flex-grow: 1;
+}
+
+/****** APP HEADER *******/
+
+.app-header{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  background-color: #215e8e;
+  color: #FDFDFD;
+}
+
+.btn-appheader{
+  display: flex;
+  flex-grow: 0
+}
+
+.title-text{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/****** APP OPTION ******/
+
+.app-option{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  background-color: #FDFDFD;
+}
 
 /******* TEMPLATES **********/
 
