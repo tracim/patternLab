@@ -1,1 +1,1 @@
-La section Global contient les couleurs et les fonts utilisées.
+La section Global contient les couleurs, les fonts et le Titrage utilisés.

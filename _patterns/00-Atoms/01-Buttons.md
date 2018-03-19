@@ -1,0 +1,1 @@
+Design des boutons présents sur Tracim.
