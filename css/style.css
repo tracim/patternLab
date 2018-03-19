@@ -559,6 +559,35 @@ $bg) when (@progress <= 50):before {
   color: #FDFDFD;
 }
 
+/***** ROLES STYLES ******/
+
+.role{
+  display: flex;
+}
+
+/***** NOTIFICATION *****/
+
+.table-notif{
+  display: flex;
+  align-items: center;
+  border: 1px solid #ABABAB;
+  padding: 15px;
+}
+
+.notif-wksname{
+  flex-grow: 2;
+}
+
+.notif-role{
+  flex-grow: 1;
+}
+
+.notif-activation{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
 /*********** ORGANISM ************/
 
 /******** HEADER **********/
@@ -649,7 +678,7 @@ $bg) when (@progress <= 50):before {
   flex-wrap: wrap;
 }
 
-.notification{
+.dashboard-notif{
   padding: 50px;
 }
 
