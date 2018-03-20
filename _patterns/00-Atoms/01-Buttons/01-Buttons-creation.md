@@ -2,4 +2,4 @@
 title = Buttons Creations
 ---
 
-Boutons design créations
+Design des boutons de création de fichier ou de dossier. 
