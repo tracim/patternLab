@@ -108,6 +108,11 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+/**** TEXT AREA ****/
+
+textarea{
+  height: 100%;
+}
 
 /******** DROPDOWN **********/
 
@@ -987,4 +992,19 @@ $bg) when (@progress <= 50):before {
 
 .preview-sidebar{
   width: 5%;
+}
+
+/***** APP MARKDOWN *****/
+
+.section-markdown{
+  border-radius: 10px;
+  width: 70%;
+  background-color: #FDFDFD;
+}
+
+.markdown-header{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 15px;
+  background-color: #ABABAB;
 }

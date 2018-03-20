@@ -1,0 +1,22 @@
+{{> Organismes-app-header}}
+{{> Organismes-app-option}}
+
+<div class="container-fluid nopadding">
+  <div class="body p-3" style="background-color: #f0f0f0;">
+    <div class="section-markdown mr-3">
+      <div class="markdown-header">
+        {{> Atoms-Buttons-generic}}
+        {{> Atoms-Buttons-generic}}
+      </div>
+      <div class="textarea" style="height: 600px;">
+        {{> Atoms-TextArea}}
+      </div>
+      <div class="btn-validate d-flex justify-content-end mt-3 mr-3">
+        {{> Atoms-Buttons-generic}}
+      </div>
+    </div>
+    <div class="section-timeline">
+      {{> Organismes-MessageList}}
+    </div>
+  </div>
+</div>
