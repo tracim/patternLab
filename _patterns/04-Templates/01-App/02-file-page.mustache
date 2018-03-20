@@ -1,0 +1,25 @@
+{{> Organismes-app-header}}
+{{> Organismes-app-option}}
+
+<div class="container-fluid nopadding">
+  <div class="body p-3" style="background-color: #f0f0f0;">
+    <div class="section-file mr-3">
+      <div class="preview">
+        <div class="menu-preview text-center mt-2 mb-4">
+          <i class="fas fa-download mr-2"></i>
+          <i class="far fa-copy mr-2"></i>
+          <i class="far fa-file-pdf mr-2"></i>
+        </div>
+        <div class="viewer">
+          {{> Specifique-viewer}}
+        </div>
+      </div>
+      <div class="preview-sidebar">
+        {{> Specifique-sidebar-preview}}
+      </div>
+    </div>
+    <div class="section-timeline">
+      {{> Organismes-MessageList}}
+    </div>
+  </div>
+</div>

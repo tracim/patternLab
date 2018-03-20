@@ -473,6 +473,55 @@ $bg) when (@progress <= 50):before {
   background-color: #2175fe;
 }
 
+/***** SIDEBAR PREVIEW *******/
+
+.sbfile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #215e8e;
+  cursor: pointer;
+}
+
+.sbfile-title{
+  transform: rotate(270deg);
+  width: 125px;
+  color: white;
+}
+
+.sbfile-icon{
+  font-size: 25px;
+  color: white;
+}
+
+/***** FILE PREVIEW ******/
+
+.slideshow{
+  display: flex;
+  align-items: center;
+}
+
+.fileimg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.fileimg img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.arrow{
+  margin: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 /************ MOLECULES **************/
 
 /***** FILE STYLE *****/
@@ -699,10 +748,10 @@ $bg) when (@progress <= 50):before {
   flex-direction: column;
   border-radius: 10px;
   height: 100%;
+  background-color: #FDFDFD;
 }
 
 .timeline-header{
-  flex-grow: 1;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 15px;
@@ -713,6 +762,8 @@ $bg) when (@progress <= 50):before {
 .timeline-messagelist{
   flex-direction: column;
   flex-grow: 2;
+  overflow-y: scroll;
+  height: 515px;
 }
 
 .timine-wysiwyg{
@@ -900,4 +951,40 @@ $bg) when (@progress <= 50):before {
 
 .formulaire{
   width: 50%;
+}
+
+/****** APP HTML *****/
+
+.section-html{
+  border-radius: 10px;
+  padding: 10px;
+  width: 70%;
+  background-color: #FDFDFD;
+}
+
+.section-timeline{
+  width: 30%;
+}
+
+/***** APP FILE / PREVIEW ******/
+
+.section-file{
+  display: flex;
+  border-radius: 10px;
+  width: 70%;
+  background-color: #FDFDFD;
+} 
+
+.preview{
+  width: 95%;
+  padding: 10px;
+}
+
+.menu-preview{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.preview-sidebar{
+  width: 5%;
 }
