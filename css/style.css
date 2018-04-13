@@ -536,6 +536,27 @@ $bg) when (@progress <= 50):before {
   padding: 10px;
 }
 
+/****** CARD HOMEPAGE ******/
+
+.homepageTitle{
+  font-size: 35px;
+  font-weight: 600;
+  color: #215e8e;
+}
+
+.homepageThanks{
+  font-size: 18px;
+}
+
+.homepageText{
+  font-size: 18px;
+}
+
+.homepageDelimit .delimiter{
+  margin: 55px 0;
+  width: 200px;
+}
+
 /************ MOLECULES **************/
 
 /***** FILE STYLE *****/
