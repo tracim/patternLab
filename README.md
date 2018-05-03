@@ -1,3 +1,12 @@
+## Installation de Patternlab
+
+L'installation de patternlab se fait en quelques étapes :
+
+- Télécharger la version MUSTACHE PHP présente sur le github de [Patternlab.io](https://github.com/pattern-lab/patternlab-php) puis suivez les instructions.
+- Remplacer le contenu du fichier source par celui présent sur le github de [Tracim/Patternlab](https://github.com/tracim/patternLab).
+- Installer les dépendances suivantes nécessaire pour faire fonctionner le patternlab de Tracim.
+
+
 ## Installation des dépendances nécessaires au patternlab de Tracim.
 
 Pour faire fonctionner patternlab, il faut installer :
