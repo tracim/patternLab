@@ -9,8 +9,21 @@
 
     <div class="content px-5">
 
-      <div class="my-5"> 
-        {{> Atoms-Titles}}
+      <div class="d-flex align-items-center justify-content-between">
+
+        <div class="d-flex align-items-center my-5"> 
+          <div>
+            {{> Atoms-Titles}}
+          </div>
+          <div class="privaty mx-3">
+            (public)
+          </div>
+        </div>
+
+        <div class="advanceddashboard">
+          {{> Atoms-Buttons-generic}}
+        </div>
+
       </div>
 
       <div class="heading-info my-5">
@@ -83,8 +96,14 @@
         </div>
       </div>
 
-      <div class="webdav mb-5">
-        {{> Specifique-Btn-Webdav}}
+      <div class="d-flex justify-content-between">
+        <div class="webdav mb-5">
+          {{> Specifique-Btn-Webdav}}
+        </div>
+
+        <div class="calendar mb-5">
+          {{> Specifique-BtnCalendar}}
+        </div>
       </div>
 
     </div>
