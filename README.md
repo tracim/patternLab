@@ -24,7 +24,7 @@ Jquery :
 - Télécharger jquery via [jquery/download](http://jquery.com/download/).
 - Une fois téléchargé, placer jquery dans le dossier `js`, présent dans `source`.
 - Charger le fichier jquery dans patternlab : ouvrir le fichier `_01-foot.mustache` présent dans le dossier `_meta`.
-- Ajouter la balise script : `<script src="../../js/jquery/jquery.3.2.1.min.js"></script>`.
+- Ajouter la balise script : `<script src="../../js/jquery/jquery-3.3.1.min.js"></script>`.
 
 Popper :
 
