@@ -206,6 +206,26 @@ textarea{
   color: #252525;
 }
 
+/**** EXTANDED ACTION ****/
+
+.extandedaction__subdropdown {
+  margin: 0;
+  padding: 0;
+  left: inherit;
+  right: 0;
+}
+
+.subitem {
+  padding: 10px;
+}
+
+.subitem:hover {
+  background-color: #2175fe;
+  color: #FDFDFD;
+}
+
+/*************************/
+
 /***** PROGRESS BAR ******/
 
 .set-size {
@@ -557,6 +577,17 @@ $bg) when (@progress <= 50):before {
   width: 200px;
 }
 
+/***** BTN ADD IN FOLDER *****/
+
+.addfoldersub{
+  margin: 0;
+  padding: 0;
+}
+
+.addfolderitem{
+  padding: 10px;
+}
+
 /************ MOLECULES **************/
 
 /***** FILE STYLE *****/
@@ -624,7 +655,6 @@ $bg) when (@progress <= 50):before {
 
 .member{
   display: flex;
-  align-items: center;
   border: 1px solid #ABABAB;
   padding: 15px;
 }
@@ -633,6 +663,11 @@ $bg) when (@progress <= 50):before {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.deletemember{
+  color: #2175fe;
+  cursor: pointer;
 }
 
 /***** MENU VERTICAL ******/
