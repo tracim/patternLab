@@ -1,0 +1,49 @@
+{{> Organismes-app-header}}
+{{> Organismes-app-option}}
+
+<div class="container-fluid nopadding p-3" style="background-color: #f0f0f0;">
+
+  <div class="dash-desc p-4 my-4" style="background-color: #fdfdfd; border-radius: 5px;">
+    <div class="desc-textarea">
+      {{> Atoms-TextArea}}
+    </div>
+    <div class="desc-btn d-flex justify-content-end mt-4">
+      {{> Atoms-Buttons-generic}}
+    </div>
+  </div>
+
+  <div class="dash-list" style="background-color: #fdfdfd; border-radius: 5px;">
+    <div class="list-header p-3">
+      {{> Atoms-subTitle}}
+    </div>
+    <div class="list-member"> 
+      {{> Organismes-list-member}}
+    </div>
+  </div>
+
+  <div class="dash-fonction my-4 p-4" style="background-color: #fdfdfd; border-radius: 5px;">
+    <div class="fonction-header mb-3">
+      {{> Atoms-subTitle}}
+    </div>
+
+    <div class="function-list d-flex align-items-center justify-content-between my-4">
+      <div class="functionlist-text">
+        Function 1
+      </div>
+      <div class="functionlist-btn">
+        {{> Atoms-Button-switch}}
+      </div>
+    </div>
+
+    <div class="function-list d-flex align-items-center justify-content-between">
+      <div class="functionlist-text">
+        Function 2
+      </div>
+      <div class="functionlist-btn">
+        {{> Atoms-Button-switch}}
+      </div>
+    </div>
+
+  </div>
+
+</div>

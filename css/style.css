@@ -1073,3 +1073,14 @@ $bg) when (@progress <= 50):before {
   padding: 15px;
   background-color: #ABABAB;
 }
+
+/***** APP FOLDER *****/
+
+.section-folder{
+  border-radius: 10px;
+  width: 50%;
+}
+
+.folder-timeline{
+  width: 49%;
+}
